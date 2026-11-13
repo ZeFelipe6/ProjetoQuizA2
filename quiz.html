@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Interativo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+        <div id="tela-inicial">
+
+            <h1>Quiz Interativo</h1>
+
+            <p>
+                Teste seus conhecimentos e veja quantas perguntas
+                consegue acertar!
+            </p>
+
+            <button id="btn-iniciar">Comecar Quiz</button>
+
+        </div>
+
+
+        <!-- TELA DO QUIZ -->
+        <div id="tela-quiz" style="display: none;">
+
+            <h2>Quiz de Conhecimentos Gerais</h2>
+
+            <div class="informacoes">
+
+                <p>
+                    Pergunta:
+                    <span id="numero-pergunta">1</span>
+                </p>
+
+                <p>
+                    Pontuacao:
+                    <span id="pontuacao">0</span>
+                </p>
+
+            </div>
+
+            <h3 id="pergunta"></h3>
+
+            <div id="alternativas">
+
+                <button class="alternativa" id="opcao-a"></button>
+
+                <button class="alternativa" id="opcao-b"></button>
+
+                <button class="alternativa" id="opcao-c"></button>
+
+                <button class="alternativa" id="opcao-d"></button>
+
+            </div>
+
+            <p id="mensagem-resposta"></p>
+
+            <button id="btn-confirmar">
+                Confirmar Resposta
+            </button>
+
+            <button id="btn-proxima" style="display: none;">
+                Proxima Pergunta
+            </button>
+
+        </div>
+
+
+        <!-- TELA DE RESULTADO -->
+        <div id="tela-resultado" style="display: none;">
+
+            <h2>Quiz Finalizado!</h2>
+
+            <p>Sua pontuacao final foi:</p>
+
+            <h1 id="resultado-final">0 pontos</h1>
+
+            <p id="mensagem-final"></p>
+
+            <button id="btn-reiniciar">
+                Jogar Novamente
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
